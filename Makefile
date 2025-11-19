@@ -16,4 +16,10 @@ bootstrap:
 
 
 # Build target
-build: Unknown still
+build: $(SRC) $(CC) $(CFLAGS) $(SRC) -o $(OUTPUT)
+  @echo "Packet sniffer has compiled.
+
+# Clean 
+clean:
+  rm -f $(OUTPUT)
+  @echo "Cleaned build files."
